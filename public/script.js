@@ -7,10 +7,10 @@ let conversationHistory = [];
 document.addEventListener('DOMContentLoaded', async () => {
     try {
         // API 엔드포인트에서 데이터 로드
-        const videoSystemResponse = await fetch('/api/video-prompt-system');
+        const videoSystemResponse = await fetch('https://ax2fggqnv2hh5bhdvehevrvht40ldjte.lambda-url.ap-northeast-2.on.aws/');
         videoPromptSystem = await videoSystemResponse.json();
         
-        const toolsSchemaResponse = await fetch('/api/tools-schema');
+        const toolsSchemaResponse = await fetch('https://nq3cdllk4dwj5daif3r2vvbnve0ldcrq.lambda-url.ap-northeast-2.on.aws/');
         allToolsSchema = await toolsSchemaResponse.json();
         
         console.log('시스템 초기화 완료');
