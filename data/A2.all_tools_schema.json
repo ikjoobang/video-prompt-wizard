@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "total_tools": 5,
+    "formats": ["json"],
+    "generated_date": "2025-10-25",
+    "description": "Tool schemas for AI video generation"
+  },
+  "tools": [
+    {
+      "id": 1,
+      "name": "video_generation",
+      "category": "media",
+      "description": "Generate video from text prompt using AI models",
+      "parameters": {
+        "prompt": {
+          "type": "string",
+          "required": true,
+          "description": "Detailed text description of the video to generate"
+        },
+        "model": {
+          "type": "string",
+          "required": true,
+          "description": "AI model to use for generation",
+          "enum": ["veo-2.0", "veo-1.5", "sora-1.0", "sora-turbo"]
+        },
+        "duration": {
+          "type": "integer",
+          "required": false,
+          "description": "Video duration in seconds",
+          "default": 5,
+          "min": 2,
+          "max": 10
+        },
+        "aspect_ratio": {
+          "type": "string",
+          "required": false,
+          "description": "Video aspect ratio",
+          "enum": ["16:9", "9:16", "1:1", "4:3"],
+          "default": "16:9"
+        },
+        "quality": {
+          "type": "string",
+          "required": false,
+          "description": "Output quality",
+          "enum": ["draft", "standard", "high", "ultra"],
+          "default": "high"
+        }
+      },
+      "use_cases": ["create marketing videos", "generate social media content", "produce creative videos"]
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AI 영상 제작 프롬프트 마법사</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 헤더 -->
+        <header class="header">
+            <h1 class="title">AI 영상 제작 프롬프트 마법사 입니다.</h1>
+        </header>
+
+        <!-- 메인 콘텐츠 -->
+        <main class="main-content">
+            <!-- 핵심 전문 분야 -->
+            <section class="card">
+                <h2 class="card-title">✨핵심 전문 분야✨</h2>
+                <div class="card-content">
+                    <div class="single-line-item">
+                        <p class="item-title">🎬비디오 프롬프트 최적화🎬</p>
+                    </div>
+                    <div class="single-line-item">
+                        <p class="item-desc">간단한 아이디어를 할리우드급 영상 프롬프트로 변환</p>
+                    </div>
+                    
+                    <div class="single-line-item">
+                        <p class="item-title">✨VEO 3 / VEO 3.1 / SORA 2 / SORA 2 Pro✨</p>
+                    </div>
+                    <div class="single-line-item">
+                        <p class="item-desc">최신 AI 비디오 생성 모델의 기술적 특성 완벽 이해</p>
+                    </div>
+                    
+                    <div class="single-line-item">
+                        <p class="item-title">✨시네마틱 기법 적용✨</p>
+                    </div>
+                    <div class="single-line-item">
+                        <p class="item-desc">영화 촬영 감독 수준의 카메라 워크, 조명, 구도 설계</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 제가 도와드릴 수 있는 것들 -->
+            <section class="card">
+                <h2 class="card-title">💡 제가 도와드릴 수 있는 것들💡</h2>
+                <div class="card-content">
+                    <div class="help-item">
+                        <h3>1️⃣ 프롬프트 강화 (Enhancement)</h3>
+                        <p>간단한 아이디어를 전문가급 프롬프트로 변환</p>
+                        <p class="example">예: "해변의 일몫"<br>카메라 앵글, 조명, 색상, 음향 포함 완벽화</p>
+                    </div>
+                    <div class="help-item">
+                        <h3>2️⃣ 프롬프트 창작 (Creation)</h3>
+                        <p>컨셉/목적에 맞춰 완벽한 프롬프트 제작</p>
+                        <p class="example">마케팅, 예술, 교육 등 목적에 맞춘 맞춤형 영상 기획</p>
+                    </div>
+                    <div class="help-item">
+                        <h3>3️⃣ 영감 제공 (Inspiration)</h3>
+                        <p>막막하신가요?</p>
+                        <p class="example">창의적인 아이디어와 프롬프트를 제안해드립니다</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 제 특별한 능력 -->
+            <section class="card">
+                <h2 class="card-title">🎨 제 특별한 능력</h2>
+                <div class="card-content">
+                    <div class="single-line-item">
+                        <p class="item-title">✨ 16가지 필수 요소 통합✨</p>
+                    </div>
+                    <div class="single-line-item">
+                        <p class="item-desc">타이밍, 카메라워크, 조명, 색상, 오디오 등</p>
+                    </div>
+                    
+                    <div class="single-line-item">
+                        <p class="item-title">🎬 시네마틱 기법 전문🎬</p>
+                    </div>
+                    <div class="single-line-item">
+                        <p class="item-desc">앵글, 렌즈, 무브먼트, 컴포지션 등</p>
+                    </div>
+                    
+                    <div class="single-line-item">
+                        <p class="item-title">🎵 VEO 3의 네이티브 오디오 활용🎵</p>
+                    </div>
+                    <div class="single-line-item">
+                        <p class="item-desc">효과음, 배경음악, 대사 등</p>
+                    </div>
+                    
+                    <div class="single-line-item">
+                        <p class="item-title">📊 기술 파라미터 최적화 📊</p>
+                    </div>
+                    <div class="single-line-item">
+                        <p class="item-desc">화면비율, 지속시간, HD/고속 모드 등</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 대화 영역 -->
+            <section class="chat-section">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message ai-message">
+                        <p>안녕하세요! 🎬<br>어떤 영상 프롬프트를 만들어드릴까요?</p>
+                        <p class="message-hint">간단한 아이디어만 말씀해주세요.<br>전문가급 프롬프트로 변환해드립니다.</p>
+                    </div>
+                </div>
+                <div class="chat-input-container">
+                    <textarea 
+                        id="userInput" 
+                        class="chat-input" 
+                        placeholder="예: 해변의 일몰 장면을 만들고 싶어요"
+                        rows="3"></textarea>
+                    <button id="sendButton" class="send-button">전송</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- 푸터 -->
+        <footer class="footer">
+            <p>© 2025 <a href="https://www.studiojuai.com" target="_blank" rel="noopener noreferrer">스튜디오JU</a>. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
